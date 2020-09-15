@@ -203,3 +203,7 @@ var nodes = {
     "0030E8CFA4BE7936": $0030E8CFA4BE7936,
     "00ED3F381BCEE902": $00ED3F381BCEE902
 };
+
+> curl 127.0.0.1/api/loraNetwork/whitelist/devices -X POST --data '{"deveui":"16ea76f6ab663d80","appeui":"0001020304050607","class":"C","appkey":"4c194e20d396b5f7d3e1551e4cd320de"}' -H "Content-Type: application/json"
+> curl 127.0.0.1/api/command/save -X POST --data ""
+> /etc/init.d/lora-network-server restart
